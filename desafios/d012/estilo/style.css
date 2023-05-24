@@ -2,11 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family= família = Sriracha & display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family= Passion +One & display=swap');
+@font-face {
+    font-family: 'Passion';
+    src: url(../fontes/PassionOne-Regular.otf) format(opentype);
+}
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
+    --fonte2: 'Passion', cursive;
     --fonte3: 'Sriracha', cursive; 
 }
 
@@ -69,21 +72,26 @@ section.normal {
 section.imagem {
     background-color: rgb(48, 48, 48);
     color: white;
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.304);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.441);
+    background-color: rgba(0, 0, 0, 0.629);
     display: inline-block;
     padding: 5px;
+    
 }
 
 section#img01 {
     background-image: url('../imagens/background001.jpg');
+    background-position: right center;
 }
 
 section#img02 {
-    background-image: url('../imagens/background002.jpg
-    ');
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
