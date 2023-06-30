@@ -18,8 +18,15 @@
         </p>
         <p>
             <input type="submit" value="ENVIAR">
-            <input type="text">
+            <input type="reset" value="LIMPAR">
         </p>
     </form>
+
+    <script>
+        function calcidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 </body>
 </html>
